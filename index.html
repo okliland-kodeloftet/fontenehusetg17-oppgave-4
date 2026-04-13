@@ -21,18 +21,35 @@
 
     <main class="main">
 
-      <section class="todoSection"></section>
+      <section class="todoSection">
 
       <h2>Oppgaver som bør gjøres</h2>
 
         <form class="todoForm">
-          <label for="todoInput">Skriv noe her</label>
+          <label for="todoInput">Huskeliste</label>
+          <div class="inputWrapper">
+            <input type="text"
+              name="todoInput"
+              id="todoInput"
+              class="todoInput"
+              placeholder="Skriv noe greier her">
 
+            <button type="submit" id="submitButton" class="submitButton">
+              Legg Til
+            </button>
 
-
+          </div>
 
         </form>
 
+        <ul id="todoList" class="todoList">
+          <li class="todoItem">Eksempel på oppgave</li>
+          <li class="todoItem">Eksempel på oppgave
+            <span><button>Ferdig</button><button>Slett</button></span>
+          </li>
+
+        </ul>
+      </section>
     </main>
 
     <footer class="footer">

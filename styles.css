@@ -34,6 +34,76 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.introText{
+  margin: 0;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1.6rem;
+}
+
+.todoSection h2 {
+  margin-top: 0;
+}
+
+.todoForm {
+  margin-bottom: 2.4rem;
+}
+
+.todoForm label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.todoInput {
+  flex: 1;
+  min-width: 20rem;
+  padding: 1.2rem;
+  border: 2px solid var(--accentPrimColor);
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.submitButton {
+  padding: 1.2rem 1.6rem;
+  border-radius: 1rem;
+  border: solid var(--accentPrimColor);
+  background-color: var(--lightColor);
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  border-color: var(--primaryColor);
+}
+
+.todoList{
+  list-style: none;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin: 1.2rem;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 1rem;
+  background-color: #f5f2f2;
+}
+
 
 
 .footer {
