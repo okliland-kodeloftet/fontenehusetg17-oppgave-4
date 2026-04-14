@@ -9,13 +9,18 @@ submitButton.addEventListener("click", function(){
 
 
     const newItem = document.createElement("li")
+    
     newItem.textContent = todoInput
     newItem.classList.toggle("todoItem")
-    const ferdigBtn = document.createElement("button")
-    const slettBtn = document.createElement("button")
+    const newSpan = document.createElement("span")
+    const ferdigBtn = document.createElement("button");
+    const slettBtn = document.createElement("button");
+
     ferdigBtn.textContent = "Ferdig"
     slettBtn.textContent = "Slett"
-    newItem.appendChild(ferdigBtn);
-    newItem.appendChild(slettBtn);
+    
+    newSpan.appendChild(ferdigBtn);
+    newSpan.appendChild(slettBtn);
+    newItem.appendChild(newSpan)
     todoList.appendChild(newItem);
 })
