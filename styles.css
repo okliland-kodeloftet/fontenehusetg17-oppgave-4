@@ -112,3 +112,7 @@ body {
   text-align: center;
   padding: 2.4rem 1.6rem;
 }
+
+.green {
+  background-color: green;
+}

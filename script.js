@@ -8,6 +8,14 @@ submitButton.addEventListener("click", function(){
     console.log(todoInput , todoList)
 
 
+
+    if (todoInput === "") {
+        document.querySelector("#error").textContent = "Skriv noe!";
+        return;
+    }
+
+
+
     const newItem = document.createElement("li")
     
     newItem.textContent = todoInput
@@ -18,9 +26,23 @@ submitButton.addEventListener("click", function(){
 
     ferdigBtn.textContent = "Ferdig"
     slettBtn.textContent = "Slett"
+
+    ferdigBtn.addEventListener("click", function() {
+        ferdigBtn.classList.toggle("green");
+
+      })
+    
+    slettBtn.addEventListener("click", function(){
+        newItem.remove("")
+    });
     
     newSpan.appendChild(ferdigBtn);
     newSpan.appendChild(slettBtn);
     newItem.appendChild(newSpan)
     todoList.appendChild(newItem);
+
+    document.querySelector("#todoInput").value = "";
+
 })
+
+
